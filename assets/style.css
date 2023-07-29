@@ -10,7 +10,7 @@ header {
   border: solid black;
 }
 
-li {
+ul {
   display: flex;
   flex-direction: row;
   justify-content: end;

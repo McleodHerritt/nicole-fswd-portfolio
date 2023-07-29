@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -11,57 +11,65 @@
       <h1>Nicole McLeod</h1>
       <nav>
         <ul>
-          <li>About Me</li>
-          <li>My Work</li>
-          <li>Contact Me</li>
-          <li>Resume</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I grew up in a small town located in Newfoundland called Heart's
-          Content. I graduated high school and moved to Nova Scotia where I
-          studied Human Services at NSCC. I worked in mental health for over 20
-          years, now I am starting a new journey to become a Full Stack Web
-          Developer.
-        </p>
+      <section id="about-me">
+        <aside>
+          <h2>About Me</h2>
+        </aside>
+        <article>
+          <p>
+            I grew up in a small town located in Newfoundland called Heart's
+            Content. I graduated high school and moved to Nova Scotia where I
+            studied Human Services at NSCC. I worked in mental health for over
+            20 years, now I am starting a new journey to become a Full Stack Web
+            Developer.
+          </p>
+        </article>
       </section>
 
       <section id="work">
-        <h2>My Work</h2>
-            <h3>
-                <a href="https://mcleodherritt.github.io/prework-study-guide/">
-            </h3>
-            <h3>
-                <a href="//mcleodherritt.github.io/horiseon-client/">
-            </h3>
-            <h3>
+        <aside>
+          <h2>My Work</h2>
+        </aside>
+        <article>
+          <p>
+            <a href="https://mcleodherritt.github.io/prework-study-guide/"
+              >prework-study-guide</a
+            >
+          </p>
 
-            </h3>
-      </section>
-
-      <section id="contact">
-        <h2>Contact me</h2>
-
-            <h3>Phone Number:</h3>
-                <p>902 410 4162</p>
-            <h3>Email:</h3>
-                <p>nmcleod2021@gmail.com</p>
-            <h3>GitHub:</h3>
-                <p>
-                <a href="//mcleodherritt.github.io/horiseon-client/"></a>
-                </p>
-
+          <p></p>
+          <p>
+            <a href="//mcleodherritt.github.io/horiseon-client/"
+              >horiseon-client</a
+            >
+          </p>
+        </article>
       </section>
 
       <section id="resume">
-        <h2>Resume</h2>
+        <aside>
+          <h2>Resume</h2>
+        </aside>
+        <article>
+          <a href="#">my resume</a>
+        </article>
       </section>
     </main>
 
-    <footer></footer>
+    <footer id="contact">
+      <address>
+        <p>902 410 4162</p>
+        <a href="mailto:nmcleod2021@gmail.com">nmcleod2021@gmail.com</a>
+        <a href="https://github.com/McleodHerritt">my github account</a>
+      </address>
+    </footer>
   </body>
 </html>
