@@ -12,10 +12,17 @@
   --background: pink;
 }
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 header {
   border: solid black;
+}
+
+h1 {
+  font-size: xx-large;
+  width: max-content;
+  padding: 0.5em;
+  background-color: var(--background);
 }
 
 ul {
@@ -40,7 +47,9 @@ article {
   flex: 80%;
   /* border: red 2px solid; */
 }
-
+.big-card {
+  position: relative;
+}
 .big-card img {
   min-width: 90%;
   padding: 5%;
@@ -50,8 +59,28 @@ article {
 }
 .small-card {
   width: 50%;
+  position: relative;
 }
 .small-card img {
   width: 80%;
   padding: 10%;
+}
+.card-title {
+  background-color: var(--background);
+  width: max-content;
+  padding: 0.5em;
+  position: absolute;
+  left: 10%;
+  bottom: 25%;
+}
+.card-title h3 {
+  font-weight: 700;
+  font-size: x-large;
+}
+.big-card .card-title {
+  left: 5%;
+}
+
+.card-title p {
+  font-weight: 400;
 }
