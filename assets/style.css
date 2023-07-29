@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  /* border: red 2px solid; */
 }
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -15,4 +16,36 @@ ul {
   flex-direction: row;
   justify-content: end;
   align-items: end;
+}
+
+section {
+  display: flex;
+  padding: 1em;
+}
+
+aside {
+  flex: 20%;
+}
+
+article {
+  flex: 80%;
+  /* border: red 2px solid; */
+}
+
+article div img {
+}
+.big-card img {
+  min-width: 90%;
+  padding: 5%;
+}
+.column-2 {
+  display: flex;
+}
+.small-card {
+  width: 50%;
+}
+.small-card img {
+  width: 80%;
+  padding: 10%;
+  b
 }
