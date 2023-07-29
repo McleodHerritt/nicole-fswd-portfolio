@@ -4,6 +4,13 @@
   border: 0;
   /* border: red 2px solid; */
 }
+
+:root {
+  --primary: blue;
+  --secondary: purple;
+  --accent: grey;
+  --background: pink;
+}
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -25,6 +32,8 @@ section {
 
 aside {
   flex: 20%;
+  border-right: var(--primary) 6px solid;
+  margin-right: 2em;
 }
 
 article {
@@ -32,8 +41,6 @@ article {
   /* border: red 2px solid; */
 }
 
-article div img {
-}
 .big-card img {
   min-width: 90%;
   padding: 5%;
@@ -47,5 +54,4 @@ article div img {
 .small-card img {
   width: 80%;
   padding: 10%;
-  b
 }
