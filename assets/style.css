@@ -16,22 +16,43 @@ body {
 }
 header {
   border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  padding: 1em;
 }
 
 h1 {
   font-size: xx-large;
   width: max-content;
-  padding: 0.5em;
-  background-color: var(--background);
+  color: var(--primary);
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: end;
+nav ul {
+  list-style: none;
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: larger;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
 section {
   display: flex;
   padding: 1em;
@@ -45,6 +66,7 @@ aside {
 
 article {
   flex: 80%;
+  font-size: x-large;
   /* border: red 2px solid; */
 }
 .big-card {
@@ -75,7 +97,7 @@ article {
 }
 .card-title h3 {
   font-weight: 700;
-  font-size: x-large;
+  font-size: xx-large;
 }
 .big-card .card-title {
   left: 5%;
@@ -83,4 +105,10 @@ article {
 
 .card-title p {
   font-weight: 400;
+}
+footer address {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-direction: row;
 }
