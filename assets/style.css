@@ -73,7 +73,7 @@ article {
   position: relative;
 }
 .big-card img {
-  min-width: 90%;
+  max-width: 90%;
   padding: 5%;
 }
 .column-2 {
