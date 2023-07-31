@@ -16,7 +16,6 @@ body {
   font-family: Arial, sans-serif;
 }
 header {
-  border: solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,23 +24,32 @@ header {
 
 .image-container {
   display: flex;
+  flex: 33%;
   justify-content: center;
   align-items: center;
 }
 .image-container img {
-  width: 25%;
+  width: 50%;
   height: auto;
   border-radius: 50%;
   padding: 1em;
 }
 
 h1 {
+  flex: 33%;
   font-size: xx-large;
+  padding-left: 5%;
   width: max-content;
   color: var(--primary);
 }
-
+nav {
+  flex: 33%;
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+}
 nav ul {
+  width: max-content;
   list-style: none;
 }
 
@@ -63,6 +71,7 @@ aside {
   flex: 20%;
   border-right: var(--primary) 6px solid;
   margin-right: 2em;
+  margin-left: 2em;
 }
 
 article {
@@ -87,6 +96,10 @@ article {
   width: 50%;
 }
 
+main {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 main a:hover {
   filter: brightness(120%) drop-shadow(8px 8px 10px grey);
 }
@@ -118,9 +131,23 @@ main a:hover {
 .card-title p {
   font-weight: 400;
 }
+
+footer {
+  padding: 3em;
+  background-color: var(--background);
+}
 footer address {
   display: flex;
   justify-content: center;
   gap: 10%;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-2 {
+    flex-direction: column;
+  }
+  .column-2 a {
+    width: 100%;
+  }
 }
