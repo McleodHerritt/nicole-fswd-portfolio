@@ -6,6 +6,6 @@ This was a challage for a Fullstack Web Development bootcamp I am taking through
 
 # Screenshot
 
-[Full screenshot](./assets/images/full%20screen%20shot.png)
+![Full screenshot](https://github.com/McleodHerritt/nicole-fswd-portfolio.git)
 
 # Link to deployed webpage
