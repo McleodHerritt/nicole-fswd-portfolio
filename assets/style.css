@@ -13,7 +13,11 @@
 }
 body {
   font-family: Arial, sans-serif;
-  padding: 5%;
+}
+/*add focus styles for keyboard navigation for accessibility*/
+a:focus,
+select:focus {
+  outline: 3px solid var(--accent);
 }
 header {
   display: flex;
@@ -169,6 +173,9 @@ footer address {
   }
   aside {
     display: none;
+  }
+  article {
+    flex: 100%;
   }
   .card-title {
     width: 50%;
