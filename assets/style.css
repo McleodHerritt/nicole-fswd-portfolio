@@ -3,9 +3,8 @@
   padding: 0;
   border: 0;
   scroll-behavior: smooth;
-  /* border: red 2px solid; */
 }
-
+/*used element selector to combine colours form css*/
 :root {
   --primary: blue;
   --secondary: purple;
@@ -14,12 +13,21 @@
 }
 body {
   font-family: Arial, sans-serif;
+  padding: 5%;
 }
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--background);
+}
+
+h1 {
+  flex: 33%;
+  font-size: xx-large;
+  padding-left: 5%;
+  width: max-content;
+  color: var(--primary);
 }
 
 .image-container {
@@ -35,13 +43,6 @@ header {
   padding: 1em;
 }
 
-h1 {
-  flex: 33%;
-  font-size: xx-large;
-  padding-left: 5%;
-  width: max-content;
-  color: var(--primary);
-}
 nav {
   flex: 33%;
   display: flex;
@@ -62,6 +63,15 @@ nav a {
 nav a:hover {
   color: var(--secondary);
 }
+
+main {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+main a:hover {
+  filter: brightness(120%) drop-shadow(8px 8px 10px grey);
+}
+
 section {
   display: flex;
   padding: 1em;
@@ -77,8 +87,8 @@ aside {
 article {
   flex: 80%;
   font-size: x-large;
-  /* border: red 2px solid; */
 }
+
 .big-card {
   position: relative;
 }
@@ -86,6 +96,10 @@ article {
   max-width: 90%;
   margin: 5%;
   border: var(--accent) 20px solid;
+}
+
+.big-card .card-title {
+  left: 5%;
 }
 
 .column-2 {
@@ -96,13 +110,6 @@ article {
   width: 50%;
 }
 
-main {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-main a:hover {
-  filter: brightness(120%) drop-shadow(8px 8px 10px grey);
-}
 .small-card {
   position: relative;
 }
@@ -124,9 +131,6 @@ main a:hover {
   font-weight: 700;
   font-size: xx-large;
 }
-.big-card .card-title {
-  left: 5%;
-}
 
 .card-title p {
   font-weight: 400;
@@ -142,12 +146,77 @@ footer address {
   gap: 10%;
   flex-direction: row;
 }
-
+/*used @media screen to all users to have optimal experience  */
 @media screen and (max-width: 1000px) {
   .column-2 {
     flex-direction: column;
   }
   .column-2 a {
     width: 100%;
+  }
+  header {
+    flex-direction: row;
+
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .column-2 {
+    flex-direction: column;
+  }
+  .column-2 a {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+  .card-title {
+    width: 50%;
+    height: 25%;
+  }
+  .card-title h3 {
+    font-weight: 700;
+    font-size: smaller;
+  }
+
+  .card-title p {
+    font-weight: 400;
+    font-size: smaller;
+  }
+
+  footer address {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .column-2 {
+    flex-direction: column;
+  }
+  .column-2 a {
+    width: 80%;
+  }
+  aside {
+    display: none;
+  }
+  .card-title {
+    width: 50%;
+    height: 25%;
+  }
+  .card-title h3 {
+    font-weight: 700;
+    font-size: small;
+  }
+
+  .card-title p {
+    font-weight: 400;
+    font-size: small;
+  }
+  footer address {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
