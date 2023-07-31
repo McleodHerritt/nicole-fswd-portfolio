@@ -1,24 +1,33 @@
+/* Reset styles for all elements */
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   scroll-behavior: smooth;
 }
-/*used element selector to combine colours form css*/
+
+/* CSS variables (custom properties) */
 :root {
+  /* Define custom color variables */
   --primary: blue;
   --secondary: purple;
   --accent: rgb(97, 174, 184);
   --background: pink;
 }
+
+/* Base styles for the entire body */
 body {
   font-family: Arial, sans-serif;
 }
+
 /*add focus styles for keyboard navigation for accessibility*/
 a:focus,
 select:focus {
   outline: 3px solid var(--accent);
 }
+
+/* Styles for the header section */
 header {
   display: flex;
   justify-content: center;
@@ -26,6 +35,7 @@ header {
   background: var(--background);
 }
 
+/* Styles for the h1 element in the header */
 h1 {
   flex: 33%;
   font-size: xx-large;
@@ -34,12 +44,15 @@ h1 {
   color: var(--primary);
 }
 
+/* Styles for the image container */
 .image-container {
   display: flex;
   flex: 33%;
   justify-content: center;
   align-items: center;
 }
+
+/* Styles for images inside the image container */
 .image-container img {
   width: 50%;
   height: auto;
@@ -47,40 +60,50 @@ h1 {
   padding: 1em;
 }
 
+/* Styles for the navigation (nav) */
 nav {
   flex: 33%;
   display: flex;
   justify-content: end;
   padding-right: 5%;
 }
+
+/* Styles for the navigation unordered list (ul) */
 nav ul {
   width: max-content;
   list-style: none;
 }
 
+/* Styles for navigation links (anchor elements) */
 nav a {
   text-decoration: none;
   color: var(--primary);
   font-size: larger;
 }
 
+/* Styles for navigation links on hover */
 nav a:hover {
   color: var(--secondary);
 }
 
+/* Styles for the main content section */
 main {
   margin-top: 3em;
   margin-bottom: 3em;
 }
+
+/* Styles for links in the main content section on hover */
 main a:hover {
   filter: brightness(120%) drop-shadow(8px 8px 10px grey);
 }
 
+/* Styles for each section in the main content */
 section {
   display: flex;
   padding: 1em;
 }
 
+/* Styles for the aside element */
 aside {
   flex: 20%;
   border-right: var(--primary) 6px solid;
@@ -88,41 +111,52 @@ aside {
   margin-left: 2em;
 }
 
+/* Styles for the article element */
 article {
   flex: 80%;
   font-size: x-large;
 }
 
+/* Styles for the big card (used in the "My Work" section) */
 .big-card {
   position: relative;
 }
+
+/* Styles for images inside big cards */
 .big-card img {
   max-width: 90%;
   margin: 5%;
   border: var(--accent) 20px solid;
 }
 
+/* Styles for the card title inside big cards */
 .big-card .card-title {
   left: 5%;
 }
 
+/* Styles for two-column layout in "My Work" section */
 .column-2 {
   display: flex;
 }
 
+/* Styles for links in the two-column layout */
 .column-2 a {
   width: 50%;
 }
 
+/* Styles for the small card (used in the "My Work" section) */
 .small-card {
   position: relative;
 }
 
+/* Styles for images inside small cards */
 .small-card img {
   width: 80%;
   margin: 10%;
   border: var(--accent) 20px solid;
 }
+
+/* Styles for the card title inside small cards */
 .card-title {
   background-color: var(--background);
   width: max-content;
@@ -131,73 +165,96 @@ article {
   left: 10%;
   bottom: 25%;
 }
+
+/* Styles for the heading (h3) inside card titles */
 .card-title h3 {
   font-weight: 700;
   font-size: xx-large;
 }
 
+/* Styles for the paragraph (p) inside card titles */
 .card-title p {
   font-weight: 400;
 }
 
+/* Styles for the footer section */
 footer {
   padding: 3em;
   background-color: var(--background);
 }
+
+/* Styles for the contact information (address) in the footer */
 footer address {
   display: flex;
   justify-content: center;
   gap: 10%;
   flex-direction: row;
 }
-/*used @media screen to all users to have optimal experience  */
+
+/*used @media screen to all users to have optimal experience*/
+/*Media query for screens with a maximum width of 1000px */
 @media screen and (max-width: 1000px) {
+  /* Styles for two-column layout on smaller screens */
   .column-2 {
     flex-direction: column;
   }
   .column-2 a {
     width: 100%;
   }
+
+  /* Styles for the header on smaller screens */
   header {
     flex-direction: row;
-
     width: 100%;
   }
 }
+
+/* Media query for screens with a maximum width of 500px */
 @media screen and (max-width: 500px) {
+  /* Styles for two-column layout on even smaller screens */
   .column-2 {
     flex-direction: column;
   }
   .column-2 a {
     width: 100%;
   }
+
+  /* Hide the aside element on smaller screens */
   aside {
     display: none;
   }
+
+  /* Adjust the article's flex size on smaller screens */
   article {
     flex: 100%;
   }
+
+  /* Styles for the card title on smaller screens */
   .card-title {
     width: 50%;
     height: 25%;
   }
+
+  /* Styles for the heading inside card titles on smaller screens */
   .card-title h3 {
     font-weight: 700;
     font-size: smaller;
   }
 
+  /* Styles for the paragraph inside card titles on smaller screens */
   .card-title p {
     font-weight: 400;
     font-size: smaller;
   }
 
+  /* Adjust the contact information layout in the footer on smaller screens */
   footer address {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-
+/* Media query for screens with a maximum width of 375px */
 @media screen and (max-width: 375px) {
   .column-2 {
     flex-direction: column;
