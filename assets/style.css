@@ -79,10 +79,14 @@ article {
 .column-2 {
   display: flex;
 }
-.small-card {
+
+.column-2 a {
   width: 50%;
+}
+.small-card {
   position: relative;
 }
+
 .small-card img {
   width: 80%;
   padding: 10%;
