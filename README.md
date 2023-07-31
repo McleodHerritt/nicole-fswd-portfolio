@@ -6,10 +6,8 @@ This was a challage for a Fullstack Web Development bootcamp I am taking through
 
 # Screenshot
 
-<<<<<<< HEAD
-![Full screenshot](https://github.com/McleodHerritt/nicole-fswd-portfolio.git)
-=======
 ![Full screenshot](./assets/images/full%20screen%20shot.png)
->>>>>>> 1e219218bf5ad06b18fd72a9caabc9264d1c1bb6
 
 # Link to deployed webpage
+
+[Link to deployed webpage]()
