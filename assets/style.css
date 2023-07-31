@@ -9,7 +9,7 @@
 :root {
   --primary: blue;
   --secondary: purple;
-  --accent: grey;
+  --accent: rgb(97, 174, 184);
   --background: pink;
 }
 body {
@@ -75,8 +75,10 @@ article {
 }
 .big-card img {
   max-width: 90%;
-  padding: 5%;
+  margin: 5%;
+  border: var(--accent) 20px solid;
 }
+
 .column-2 {
   display: flex;
 }
@@ -84,13 +86,18 @@ article {
 .column-2 a {
   width: 50%;
 }
+
+main a:hover {
+  filter: brightness(120%) drop-shadow(8px 8px 10px grey);
+}
 .small-card {
   position: relative;
 }
 
 .small-card img {
   width: 80%;
-  padding: 10%;
+  margin: 10%;
+  border: var(--accent) 20px solid;
 }
 .card-title {
   background-color: var(--background);
